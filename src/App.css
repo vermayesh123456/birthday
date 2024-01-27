@@ -1,38 +1,69 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff, #ffa600); /* Gradient background */
+}
+
+.app {
+  max-width: 375px; /* Width suitable for iPhone 11 display */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden; /* Ensure rounded corners are visible */
+  background-color: #8400ffa1;
+}
+
+header,
+footer {
   text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ff6b6b, #6b6b6b); /* Gradient header and footer */
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.typist {
+  color: #ff0303; 
+}
+
+footer {
+  margin-top: 20px;
+  background: linear-gradient(to right, #ff0101, #067ece); 
+}
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden;
+}
+
+.carousel .slider {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel .slider .slide {
+  flex: 0 0 auto;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel .carousel-status {
+  display: none; /* Hide the status indicator */
 }
+
